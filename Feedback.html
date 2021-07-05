@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Start of HTML -->
+<html lang="en">
+
+<!-- Insert File Header Comments here -->
+
+<!-- Author: Michelle Kyell -->
+<!-- Date: 13.04.2021-->
+
+<!-- Start of Head -->
+<head>
+	<meta charset="UTF-8">
+	<title>Feedback</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+	
+	<!--<script src=file:///C:/Users/miche/OneDrive/Documents/Foundation%20Sem%202/Web%20Technology/FST10011_studentID_Group1/Michelle%20Kyell%20Liusvia/Lunch.html#"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
+	
+</head>
+
+<body>
+	<div class="banner-area4">
+		<nav class= "navbar">
+			<a href="index.html" target="_self">
+			<!--https://pngtree.com/so/food-clipart-->
+			<img class="logo" src="images/logo.png" alt="Homepage">
+			</a>
+			<ul>
+				<li><a href="Breakfast.html">Breakfast</a></li>
+				<li><a href="Lunch.html">Lunch</a></li>
+				<li><a href="Dinner.html">Dinner</a></li>
+				<li><a class="active"  href="Feedback">Feedback</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!--Feedback form-->
+	
+	<div class="container1">
+		<!--<div class="row">-->
+			<!--<div class="col-md-2"></div>-->
+			<!--<div class="col-md-8"></div>-->
+			
+				<h1 class="text-center mt-5 font-weight-bold">Feedback</h1>
+				<hr class="bg-white">
+				<h3 class="text-center">Please write your feedback below:</h3>
+				
+				<form name="feedback" action="mailto:michellekyell@gmail.com" method="post" enctype="text/plain">
+					<!-- Using table to structure the form -->
+					<fieldset>
+					<!--<legend>Feedback</legend>-->
+					<table class="tg">
+						<tr>
+							<td>Gender</td>
+							<td>
+								<div class="radio-toolbar">
+								<label for="Male">Male
+								<input id="Male" type="radio" name="gender" value="Male"></label>
+								<label for="Female">Female
+								<input id="Female" type="radio" name="gender" value="Female"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>How would you rate our website? (1-5)</td>
+							<td>
+								<input type="range" name="rating" min="1" max="5" onchange="updateTextInput(this.value);">
+							</td>
+						</tr>
+						<tr>
+							<td> Would you like to receive our newsletter?</td>
+							<td>
+								<label class="boxing" for="Yes">Yes
+								<input type="checkbox" id="Yes" name="newsletter" value="Yes"><span class="checkmark"></span></label>
+
+								<label class="boxing" for="No">No
+								<input type="checkbox" id="No" name="no newsletter" value="No"><span class="checkmark"></span></label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<textarea name="Comments" rows="6" cols="40" placeholder="Comments?"></textarea>
+							</td>
+						</tr>
+					</table>
+					</fieldset>
+
+					<fieldset>
+					<legend>Send me your response!</legend>
+					<table>
+						<tr>
+							<td>
+								<input class="textbox" type="text" name="name" size="40" placeholder="Your Name">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="textbox" type="text" name="address" placeholder=" Email Address: unknown@email.com" size="40" maxlength="20">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="textbox" type="text" name="subject" placeholder="Subject of Message: recipes request" size="40" maxlength="12">
+							</td>
+						</tr>
+					</table>
+					</fieldset>	
+					<button>Submit</button>
+				</form>
+		
+	</div>
+	
+	<br>
+	<footer>
+	<div class="footer">
+		 <p>&copy; Binge.com | <a href="about.html" target="_self"> Designed by Michelle Kyell </a> |
+			last update:7th July 2021</p>
+	</div>
+	
+	</footer>
+	
+</body>
+</html>
+	
